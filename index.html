@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Scramble Game | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circle Puzzle Game</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="game-container" id="gameContainer">
-        <div class="circle" id="outerCircle">
-            <img src="assets/outer-layer.png" alt="Outer Circle">
-        </div>
-        <div class="circle" id="innerCircle">
-            <img src="assets/inner-layer.png" alt="Inner Circle">
+    <script src="js/words.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Word Scramble</h2>
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
         </div>
     </div>
-
-    <div class="controls">
-        <button id="rotateLeft">Rotate Left</button>
-        <button id="rotateRight">Rotate Right</button>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
